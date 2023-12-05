@@ -100,18 +100,18 @@ void currGameState (char readFileName[], char writeFileName[], const char alpha[
         for (int i = 0; i < wordLength; i++) {
             for (int j = 0; j < wordLength; j++) {
                 if ((const char *) guess[i] == (const char *) wordToGuess[i] && (const char *) guess[i] != (const char *) wordToGuess[j]) {
-//                    //change to green
-//                    green();
-//                    printf("%c ", (const char *)guess[i]);
-//                    reset();
+                    //change to green
+                    green();
+                    printf("%c ", (const char *)guess[i]);
+                    reset();
                     guessColour[i] = guess[i];
                     gameBoard[guessCount][i] = guessColour[i];
                     break;
                 } else if ((const char *) guess[i] == (const char *) wordToGuess[j] && (const char *) guess[i] != (const char *) wordToGuess[i]) {
-//                    //change color to yellow
-//                    yellow();
-//                    printf("%c ", (const char *)guess[i]);
-//                    reset();
+                    //change color to yellow
+                    yellow();
+                    printf("%c ", (const char *)guess[i]);
+                    reset();
                     guessColour[i] = guess[i];
                     gameBoard[guessCount][i] = guessColour[i];
                 } else {
